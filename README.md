@@ -7,6 +7,7 @@ The algrithms this repository contains (so far..):
 1. DQN - Video: DRL - Part 2 (__link__) 
 
 ### Pre-requisites:
+(best to download Anaconda and then create a virtual environment containing atleast the following:)
 * PyTorch
 * Open AI Gym
 * Numpy
