@@ -25,8 +25,7 @@ def get_args():
     parse.add_argument('--learning-starts', type=int, default=10, help='the frames start to learn')
     parse.add_argument("--learn_frequency", type=int, default=4, help=" no.of time steps you want to print stuff in")
     parse.add_argument("--display_interval", type=int, default=100, help=" no.of time steps you want to print stuff in")
-    parse.add_argument("--episodes", type=int, default=70000, help="The total no of episodes I want to train the model for")
-    parse.add_argument("--iter", type=int, default=1e7, help="The total no of iterations I want to train the model for")
+    parse.add_argument("--episodes", type=int, default=20000, help="The total no of episodes I want to train the model for")
     parse.add_argument("--cuda", action= 'store_true', help="use GPU for training else, CPU")
 
     args= parse.parse_args()
