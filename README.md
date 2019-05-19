@@ -6,6 +6,13 @@ This repository compliments the youtube Deep Reinforcement Learning series: http
 The algrithms this repository contains (so far..):
 1. DQN - Video: DRL - Part 2 (__link__) 
 
+### Pre-requisites:
+PyTorch
+Open AI Gym
+Numpy
+Scipy
+
+
 ### DQN:
 The algorithm is so far tested on cartpole, I'll be adding some minor change, soon as the ensuing video is going to be applying it on Atari game.
 ![](DQN/images/DQN_CartPole-v0.svg)
