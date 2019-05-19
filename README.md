@@ -7,10 +7,10 @@ The algrithms this repository contains (so far..):
 1. DQN - Video: DRL - Part 2 (__link__) 
 
 ### Pre-requisites:
-PyTorch
-Open AI Gym
-Numpy
-Scipy
+* PyTorch
+* Open AI Gym
+* Numpy
+* Scipy
 
 
 ### DQN:
