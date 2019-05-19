@@ -23,35 +23,6 @@ def ToTensor(array):
 
     return tensor
 
-class ReplayBuffer():
-    def __init__(self, arguments):
-        self.args= arguments
-        self.memory= deque(maxlen= self.args.buffer_size)
-        self.experience= namedtuple("Experience", field_names=["state", "action", "reward", "next_state", "done"])
-        
-    def write_to_memory(self, state, action, reward, next_state, done):
-        # writing the transitions to memory
-        if len(self.memory) > self.args.buffer_size:
-            self.memory.popleft()
-        transition= self.experience(state, action, reward, next_state, done)
-        self.memory.append(transition)
-
-    def sample(self):
-        # randomly sample a batch of experience 
-        experiences= random.sample(self.memory, k= self.args.batch_size)
-        # convert numpy tensors to PyTorch tensors!
-        states= torch.tensor(np.vstack([i.state for i in experiences if i is not None]), dtype=torch.float32)
-        actions= torch.tensor(np.vstack([i.action for i in experiences if i is not None]), dtype=torch.long)
-        rewards= torch.tensor(np.vstack([i.reward for i in experiences if i is not None]), dtype=torch.float32)
-        next_states= torch.tensor(np.vstack([i.next_state for i in experiences if i is not None]), dtype=torch.float32)
-        dones= torch.tensor(np.vstack([i.done for i in experiences if i is not None]), dtype=torch.float32)
-
-        return (states, actions, rewards, next_states, dones)
-
-    def __len__(self):
-        return len(self.memory)
-
-
 class ReplayMemory():
     def __init__(self, arguments):
         self.args= arguments
@@ -91,10 +62,3 @@ class ReplayMemory():
     def sample(self):
         random_indexs= [random.randint(0, len(self.memory) - 1) for _ in range(self.args.batch_size)]
         return self.get_random_data(random_indexs)
-
-def ConvOutput_size(input_size, kernel_size, stride, padding, num_layers):
-    outputs=[input_size]
-    for i in range(num_layers):
-        conv_out= ((outputs[i]- kernel_size[i]) + 2*padding[i])//stride[i] + 1
-        outputs.append(conv_out)
-    return outputs[-1]
