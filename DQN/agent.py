@@ -28,7 +28,7 @@ class DQN_Agent():
         Q* = model.predict(Q(s,a))
     4. Calculate the loss i.e. the Temporal difference error: delta:
         delta= Q* - Q_value
-       and using the above: huber loss (L): L(delta)
+       and using the above: MSE loss (L): L(delta)
     5. Calculate the gradient of L w.r.t all parameters and update the DQN model
     6. Repeat the steps above till optimal policy convergence
     """
