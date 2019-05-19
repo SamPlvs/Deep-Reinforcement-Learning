@@ -1,6 +1,6 @@
 # DQN
----
-The algorithm is so far tested on cartpole, I'll be adding some minor changes soon as the ensuing video is going to be applying it on Atari game.
+
+## CartPole-v0 OpenAI Gym environment Results:
 
 to train on cartpole: 
 ---
@@ -11,3 +11,6 @@ to test on cartpole:
 python main.py --test --cuda
 
 Results on Cartpole:
+---
+
+
