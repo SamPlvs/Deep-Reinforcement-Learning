@@ -16,5 +16,4 @@ The training curve below was smoothened since the original curve is very noisy. 
 
 python main.py --test --cuda
 
-
-The Episodic rewards attained from this must always be approx. 200
+Though do keep in mind, you'll have to change the default input for the argument: '--load_model' to the path where you've stored the model. The Episodic rewards attained from this must always be approx. 200
