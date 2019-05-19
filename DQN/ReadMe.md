@@ -1,13 +1,5 @@
-# Deep-Reinforcement-Learning
-This repo goes hand in hand with the course I am doing on YouTube on Deep Reinforcement Learning
-
-
-This repository compliments the youtube Deep Reinforcement Learning series: https://www.youtube.com/watch?v=gTNNXi9ApVU
-
-The algrithms this repository contains (so far..):
-1. DQN - Video: DRL - Part 2
-
-# DQN;
+# DQN
+---
 The algorithm is so far tested on cartpole, I'll be adding some minor changes soon as the ensuing video is going to be applying it on Atari game.
 
 to train on cartpole: 
