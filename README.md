@@ -8,7 +8,6 @@ The algrithms this repository contains (so far..):
 1. DQN - Video: DRL - Part 2
 
 # DQN;
-The following is the image of our algorithm:
+The algorithm is so far tested on cartpole, I'll be running some changes soon as the following video is going to be applying it on Atari game.
 
-here's an example of it's training on the open AI gym environment: Pong.
-
+Results on Cartpole:
