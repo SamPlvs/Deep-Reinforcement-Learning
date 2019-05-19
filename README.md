@@ -4,7 +4,7 @@ This repo goes hand in hand with the course I am doing on YouTube on Deep Reinfo
 This repository compliments the youtube Deep Reinforcement Learning series: https://www.youtube.com/watch?v=gTNNXi9ApVU
 
 The algrithms this repository contains (so far..):
-1. DQN - Video: DRL - Part 2 (__link__) 
+1. DQN - Video: DRL - Part 2 (https://youtu.be/kcDYKQ2-zWg) 
 
 ### Pre-requisites:
 (best to download Anaconda and then create a virtual environment containing atleast the following:)
