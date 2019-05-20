@@ -4,6 +4,11 @@
 
 Further details on the CartPole environment: https://gym.openai.com/envs/CartPole-v1/
 
+### Non-GPU Holders:
+if you do not have a GPU please run the simple DQN file (also tested on CartPole), filename: DQN_simple_all.py
+Special thanks to TianhongDai for creating this, (https://github.com/TianhongDai)
+
+### GPU Holders:
 **Train Command**:
 
 python main.py --train --cuda
